@@ -1,0 +1,539 @@
+.tab-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.tab-button {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.music-tab-icon {
+    width: 18px;
+    height: 18px;
+    padding-right: 10px;
+    align-self: center;
+}
+
+.podcasts-tab-icon {
+    width: 18px;
+    height: 18px;
+    padding-right: 10px;
+    align-self: center;
+}
+
+.tab-button.active {
+    background: rgba(72, 72, 72, 0.6);
+    cursor: default;
+}
+
+/* Constant shine effect for active tab */
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-20deg);
+    animation: shine 2s infinite;
+}
+
+/* Tab content animations */
+.tab-content {
+    display: none;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.tab-content.active {
+    display: block;
+    animation: slideIn 0s ease forwards;
+}
+
+.pt-main-audiobook {
+    display: flex;
+    justify-content: center;
+}
+
+.audiobook-playlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.audiobook-card {
+    border: 0px solid #ddd;
+    background-color: #181818;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.audiobook-card:hover {
+    transform: translateY(-2px);
+}
+
+.audiobook-cover {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 5px 5px;
+}
+
+.pt-audiobook-info {
+    position: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.2rem;
+}
+
+.audiobook-title {
+    color: white;
+    padding: 0.1px;
+    margin: 0.2px 0.2px;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.audiobook-author {
+    color: #afafaf;
+    font-size: 0.5em;
+}
+
+.modal {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(50px);
+    display: none;
+    z-index: 2000;
+}
+
+.pt-ep-close-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ep-close-btn {
+    position: absolute;
+    top: 20px;
+    align-self: center;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.modal-cover {
+    margin-top: 120px;
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: -0.05rem;
+    padding: 1.5rem;
+}
+
+.modal-author {
+    color: #c3c3c3;
+    font-size: 0.9rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.episode-container {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.episode-list {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    margin: 1.5rem;
+}
+
+.episode-item {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    
+    background: #ffffff00;
+    color: white;
+    border-radius: 7px;
+    transition: transform 0.2s;
+    border: 1px;
+    border-bottom-style: dashed;
+}
+
+.episode-item:last-child {
+    margin-bottom: 50px;
+}
+
+.episode-item:hover {
+    transform: translateX(1);
+}
+
+
+.episode-number {
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 10px;
+    min-width: 30px;
+}
+
+.episode-title {
+    flex-grow: 1;
+    color: #ffffff;
+}
+
+.episode-title::after {
+    position: fixed;
+    content: '';
+    margin-left: 40%;
+    width: 24px;
+    height: 24px;
+    color: white;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z' fill='%23ffffff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+
+.episode-item:hover ::after {
+    opacity: 1;
+}
+
+.ptaudiobookFooterPlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#audiobookFooterPlayer {
+    position: fixed;
+    margin-left: 5%;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    background: rgba(74, 74, 74, 0.6);
+    color: white;
+    backdrop-filter: blur(20px);
+    display: none;
+    z-index: 3000;
+    border-radius: 10px;
+}
+
+.audiobook-player-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.player-cover {
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    object-fit: cover;
+    align-self: flex-start;
+}
+
+.player-info {
+    flex-grow: 1;
+    align-self: center;
+    line-height: 0.75rem;
+
+}
+
+#playerEpisodeTitle {
+    padding-right: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+#playerBookTitle {
+    font-size: 0.5rem;
+    padding-right: 1rem;
+}
+
+.pt-audiobook-progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.audiobook-progress-bar {
+    margin-top: -0.1rem;
+    width: 93%;
+    border-radius: 10px 10px 10px 10px;
+    height: 2px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.audiobook-progress {
+    height: 100%;
+    background: #323232;
+    width: 0%;
+}
+
+.playPauseBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    right: 10px;
+}
+
+.playPauseBtn svg {
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+.load-more-btn {
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    /* centers the button and adds space */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00000074;
+    backdrop-filter: blur(20px);
+    border: none;
+    margin-top: -5px;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-btn-playlist {
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00000074;
+    backdrop-filter: blur(20px);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+.load-more-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-20deg);
+    animation: shine 2s infinite;
+}
+
+.load-more-btn-playlist::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-20deg);
+    animation: shine 2s infinite;
+}
+
+.load-more-btn:hover {
+    background-color: #727272ae;
+}
+
+.load-more-btn-playlist:hover {
+    background-color: #727272ae;
+}
+
+.load-more-btn svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    overflow: hidden;
+    animation: spin 3s linear infinite;
+}
+
+.load-more-btn-playlist svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    overflow: hidden;
+    animation: spin 3s linear infinite;
+}
+
+.load-more-btn svg:hover {
+    color: black;
+}
+
+.load-more-btn-playlist svg:hover {
+    color: black;
+}
+
+/*-----------------------------------------------------------mobile-config-----------------------------------------------------*/
+@media (max-width: 568px) {
+    .tab-button {
+        cursor: none;
+    }
+
+    .tab-button:active {
+        transform: scale(1.05);
+    }
+
+    .audiobook-playlist-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .audiobook-card {
+        cursor: none;
+    }
+
+    .ep-close-btn {
+        cursor: none;
+    }
+
+    .ep-close-btn:active {
+        transform: scale(1.02);
+    }
+
+    .playPauseBtn {
+        cursor: none;
+    }
+
+    .playPauseBtn:active {
+        transform: scale(1.02);
+    }
+
+    .audiobook-progress-bar {
+        cursor: none;
+    }
+
+    .load-more-btn {
+        cursor: none;
+    }
+}
+
+
+/*-------------------------------------------------------------pd-config-------------------------------------------------------*/
+@media (min-width: 600px) {
+    .audiobook-playlist-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/*------------------------------------------------------------Animation--------------------------------------------------------*/
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 200%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,711 @@
+{
+    "audiobooks": [
+        {
+            "id" : "1",
+            "name": "Eat That Frog!: 21 Great Ways to Stop Procrastinating and Get More Done in Less Time",
+            "author": "Brian Tracy",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_32_1689559228.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/eatpart%2001.mp3"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/eatpart%2002.mp3"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/eatpart%2003.mp3"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/eatpart%2004.mp3"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/eatpart%2005.mp3"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/eatpart%2006.mp3"
+                }
+            ]
+        },
+        {
+            "id" : "2",
+            "name": "CASHVERTISING ONLINE - How to Use the Latest Findings in Buyer Psychology to Explode Your Online Ad Response",
+            "author": "Drew Eric Whitman",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_2649_1736579290.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/CASHVERTISING_part01.mp3"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/CASHVERTISING_part02.mp3"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/CASHVERTISING_part03.mp3"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/CASHVERTISING_part04.mp3"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/CASHVERTISING_part05.mp3"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/CASHVERTISING_part06.mp3"
+                }
+            ]
+        },
+        {
+            "id" : "3",
+            "name": "Deep Work",
+            "author": "Cal Newport",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_13_1604901123.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/DEEPWORK_part01.mp3"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/DEEPWORK_part02.mp3"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/DEEPWORK_part03.mp3"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/DEEPWORK_part04.mp3"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/DEEPWORK_part05.mp3"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/DEEPWORK_part06.mp3"
+                },
+                {
+                    "id": "7",
+                    "name": "Part 07",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/DEEPWORK_part07.mp3"
+                }
+            ]
+        },
+        {
+            "id" : "4",
+            "name": "Chanakya Neeti",
+            "author": "Chanakya Neeti",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_51_1605890935.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/Chanakya%20Neeti%20Part%2001.mp3"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/Chanakya%20Neeti%20Part%2002.mp3"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/Chanakya%20Neeti%20Part%2003.mp3"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/Chanakya%20Neeti%20Part%2004.mp3"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/Chanakya%20Neeti%20Part%2005.mp3"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/Chanakya%20Neeti%20Part%2006.mp3"
+                }
+            ]
+        },
+        {
+            "id" : "5",
+            "name": "High Performance Habits: How Extraordinary People Become That Way",
+            "author": "Brendon Burchard",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_56_1604861949.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Part%2001.mp3"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Part%2002.mp3"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Part%2003.mp3"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Part%2004.mp3"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Part%2005.mp3"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Part%2006.mp3"
+                },
+                {
+                    "id": "7",
+                    "name": "Part 07",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Part%2007.mp3"
+                }
+            ]
+        },
+        {
+            "id" : "6",
+            "name": "High Performance Habits: How Extraordinary People Become That Way (English)",
+            "author": "Brendon Burchard",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_56_1604861949.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Eng%20Part%2001%20.mp3"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Eng%20Part%2002%20.mp3"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Eng%20Part%2003%20.mp3"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Eng%20Part%2004%20.mp3"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Eng%20Part%2005%20.mp3"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/High%20Performance%20Habits%20Eng%20Part%2006%20.mp3"
+                }
+            ]
+        },
+        {
+            "id" : "7",
+            "name": "Outliers",
+            "author": "Malcolm Gladwell",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_58_1604890490.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "8",
+            "name": "Outliers (English)",
+            "author": "Malcolm Gladwell",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_58_1604890490.png",
+            "episodes": [
+                {
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "9",
+            "name": "Originals: How Non-Conformists Move the World",
+            "author": "Adam Grant",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_65_1604890535.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "10",
+            "name": "Chicken Soup for the Unsinkable Soul",
+            "author": "Heather McNamara, Jack Canfield, and Mark Victor Hansen",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_73_1604890634.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "7",
+                    "name": "Part 07",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "11",
+            "name": "Who Moved My Cheese?",
+            "author": "Spencer Johnson",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_81_1604890692.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "7",
+                    "name": "Part 07",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "12",
+            "name": "Thinking, Fast and Slow",
+            "author": "Daniel Kahneman",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_47_1604861843.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "13",
+            "name": "The Power of Your Subconscious Mind",
+            "author": "Joseph Murphy",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_70_1604890586.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "7",
+                    "name": "Part 07",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "14",
+            "name": "A THOUSAND BRAINS - A New Theory of Intelligence",
+            "author": "Jeff Hawkins",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_1606.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "15",
+            "name": "DotCom Secrets: The Underground Playbook for Growing your Company Online",
+            "author": "Russell Bronson",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_106_1604902701.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "16",
+            "name": "The 22 Immutable Laws of Branding: How to Build a Product Or Service Into a World-Class Brand.",
+            "author": "Al Ries and Laura Ries",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_91_1604890768.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "17",
+            "name": "Wings Of Fire",
+            "author": "A. P. J. Abdul Kalam and Arun Tiwari",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_82_1604859275.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "5",
+                    "name": "Part 05",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "6",
+                    "name": "Part 06",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "7",
+                    "name": "Part 07",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "8",
+                    "name": "Part 08",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                },
+                {
+                    "id": "9",
+                    "name": "Part 09",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/"
+                }
+            ]
+        },
+        {
+            "id" : "18",
+            "name": "A Beautiful Mind",
+            "author": "Sylvia Nasar",
+            "coverImage": "https://images.greatideasgreatlife.com/thumbnails/thumb_1158_1652166979.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Part 01",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/ABEAUTIFULMIND_part01.mp3"
+                },
+                {
+                    "id": "2",
+                    "name": "Part 02",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/ABEAUTIFULMIND_part02.mp3"
+                },
+                {
+                    "id": "3",
+                    "name": "Part 03",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/ABEAUTIFULMIND_part03.mp3"
+                },
+                {
+                    "id": "4",
+                    "name": "Part 04",
+                    "audioUrl": "https://cdn.jsdelivr.net/gh/Unknownyy00/01-audiobook-repo@main/ABEAUTIFULMIND_part04.mp3"
+                }
+            ]
+        },
+        {
+            "id" : "19",
+            "name": "CA Inter - Paper 02 Corporate and Other Law",
+            "author": "Rythmify",
+            "coverImage": "https://cdn.jsdelivr.net/gh/PLAYLANDs-World/01-img-share-rapo@main/Paper%2002%20Corporate%20and%20Other%20Law.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Preliminary",
+                    "audioUrl": "https://od.lk/s/MF8zNTk2MzMyNTFf/Preliminary.wav"
+                },
+                {
+                    "id": "2",
+                    "name": "Incorporation of Company and Matters Incidental Thereto",
+                    "audioUrl": "https://od.lk/s/MF8zNTk2MzMyNzlf/Incorporation%20of%20Company%20and%20Matters%20Incidental%20Thereto.wav"
+                }
+            ]
+        }
+    ]
+}

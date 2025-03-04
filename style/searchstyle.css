@@ -1,0 +1,380 @@
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.search-button-op {
+    display: flex;
+    width: 14rem;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.73);
+    padding: 4px 4px;
+    border-radius: 50px;
+    padding-right: 30px;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-button-op:hover {
+    background-color: #f0f0f0;
+    transform: scale(0.95);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.search-button-op-search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-button-op-go {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background-color: black;
+    padding: 6px;
+    border-radius: 30% 50% 50% 30%;
+    margin-left: 6.3rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-button-op-go svg {
+    width: 15px;
+    height: 15px;
+}
+
+.search-button-op-search-icon svg {
+    width: 15px;
+    height: 15px;
+}
+
+.search-button-op:hover .search-button-op-search-icon {
+    background-color: #333;
+}
+
+
+.search-window {
+    top: -100;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.6);
+    backdrop-filter: blur(40px);
+    color: white;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    opacity: 0;
+}
+
+.search-window.show {
+    top: 0;
+    opacity: 1;
+}
+
+.search-window-head {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.close-search-window {
+    background-color: rgba(66, 66, 66, 0.731);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.close-search-window svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.search-window-title {
+    margin-top: -85px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    align-items: center;
+}
+
+
+
+
+
+#search-playlist-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#search-playlist-container::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.music-card {
+    background-color: rgba(255, 255, 255, 0.04);
+    color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    /* Fixed height for uniformity */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex: 0 0 auto;
+}
+
+.music-card:hover {
+    transform: scale(1.01);
+}
+
+.music-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.music-card-content {
+    margin-top: -20px;
+    height: 105px;
+    /* Fixed content area */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    /* Hide extra text */
+}
+
+.music-card-title {
+    font-size: 14px;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+    /* Space between title and artist */
+}
+
+.music-card-artist,
+.music-card-album {
+    margin-top: -10px;
+    color: #b0b0b0;
+    font-size: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px 0;
+    /* Small vertical spacing */
+}
+
+.music-card-links {
+    display: flex;
+    gap: 15px;
+    /* Gap between the child elements */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.music-card-link {
+    display: inline-flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.spotify-icon-search {
+    width: 26px;
+    height: 26px;
+}
+
+.youtube-icon-search {
+    width: 30px;
+    height: 30px;
+}
+
+#search-audiobook-playlist-containe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#search-audiobook-playlist-containe::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Audiobook card styling */
+.search-audiobook-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 180px;
+    height: 225px;
+    /* Fixed height for uniformity */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex: 0 0 auto;
+}
+
+.audiobook-card:hover {
+    transform: scale(1.01);
+}
+
+/* Cover image styling */
+.audiobook-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Card content styling */
+.search-audiobook-card-content {
+    margin-top: -20px;
+    /* The remaining space */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Hide extra text */
+}
+
+.search-audiobook-card-title {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 0px;
+    /* Adds space between title and author */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+}
+
+.search-audiobook-card-author {
+    margin-top: 0px;
+    font-size: 8px;
+    color: #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+}
+
+.search-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 15px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.search-container #clear-search {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000000;
+}
+
+.search-container #clear-search:hover {
+    color: #000;
+}
+
+
+/*----------------------------------------------------mobile-config---------------------------------------------------------------------*/
+
+@media (max-width: 568px) {
+    .search-button {
+        cursor: none;
+    }
+
+    .close-search-window {
+        cursor: none;
+    }
+
+    .close-search-window:active {
+        transform: scale(1.02);
+    }
+
+    .search-container #clear-search {
+        cursor: none;
+    }
+
+    .search-container #clear-search:active {
+        transform: scale(0.90);
+    }
+}
+
+
+
+/*-----------------------------------------------------windows-config---------------------------------------------------------------------*/
+
+@media (min-width: 600px) {
+    .search-button-op {
+        margin-left: auto;
+    }
+}
