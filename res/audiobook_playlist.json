@@ -706,6 +706,19 @@
                     "audioUrl": "https://od.lk/s/MF8zNTk2MzMyNzlf/Incorporation%20of%20Company%20and%20Matters%20Incidental%20Thereto.wav"
                 }
             ]
+        },
+        {
+            "id" : "20",
+            "name": "The Sale of Goods Act, 1930 - Paper 02 Business Law - CA Foundation",
+            "author": "Rythmify",
+            "coverImage": "https://cdn.jsdelivr.net/gh/PLAYLANDs-World/01-img-share-rapo@main/Paper%2002%20Corporate%20and%20Other%20Law.png",
+            "episodes": [
+                {
+                    "id": "1",
+                    "name": "Formation of the Contract of Sale",
+                    "audioUrl": "https://od.lk/s/MF8zNjA3MDE1NTJf/Sale%20of%20Goods%20Act%2C%201930_%20An%20Overview.wav"
+                }
+            ]
         }
     ]
 }
