@@ -1,9 +1,23 @@
 document.getElementById("search-button").addEventListener("click", function () {
     document.getElementById("search-window").classList.add("show");
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Lock body
+    document.body.classList.add('body-lock');
+    document.body.style.top = `-${scrollPosition}px`;
+
+    // Disable touch actions
+    document.body.style.touchAction = 'none';
 });
 
 document.getElementById("close-search-window").addEventListener("click", function () {
     document.getElementById("search-window").classList.remove("show");
+    document.body.classList.remove('body-lock');
+    document.body.style.touchAction = '';
+
+    // Restore scroll position
+    window.scrollTo(0, scrollPosition);
+    document.body.style.top = '';
 });
 
 
