@@ -65,7 +65,8 @@
 
 
 .search-window {
-    top: -100;
+    display: none;
+    top: -500;
     position: fixed;
     background-color: rgb(0, 0, 0, 0.6);
     backdrop-filter: blur(40px);
@@ -81,6 +82,7 @@
 .search-window.show {
     top: 0;
     opacity: 1;
+    display: inline;
 }
 
 .search-window-head {
@@ -129,6 +131,17 @@
     overflow-x: auto;
     scroll-behavior: smooth;
 }
+
+.search-Movies-playlist-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
 
 #search-playlist-container::-webkit-scrollbar {
     width: 0px;
