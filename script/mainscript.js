@@ -758,6 +758,14 @@ function openPopup(track) {
     document.body.appendChild(overlay);
 
     const popup = document.createElement('div');
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Lock body
+    document.body.classList.add('body-lock');
+    document.body.style.top = `-${scrollPosition}px`;
+
+    // Disable touch actions
+    document.body.style.touchAction = 'none';
     popup.classList.add('popup');
     popup.innerHTML = `
         <div class="pt-main-pt-song-info-cont"><div class="main-pt-song-info-cont"></div></div>
@@ -838,6 +846,12 @@ function handleTouchEnd(event) {
 function closePopup() {
     const popup = document.querySelector('.popup');
     const overlay = document.querySelector('.overlay');
+    document.body.classList.remove('body-lock');
+    document.body.style.touchAction = '';
+
+    // Restore scroll position
+    window.scrollTo(0, scrollPosition);
+    document.body.style.top = '';
     if (popup) {
         popup.classList.remove('active');
         setTimeout(() => popup.remove(), 300);
@@ -917,10 +931,6 @@ function likeSong(songName) {
     closePopup();
 }
 
-function downloadSong(songName) {
-    alert(`Downloading "${songName}"`);
-    closePopup();
-}
 
 // Close popup when clicking outside
 document.addEventListener('click', (e) => {
@@ -955,10 +965,24 @@ document.addEventListener('touchmove', function (event) {
 
 document.getElementById("menuButton").addEventListener("click", function () {
     document.getElementById("sideMenu").classList.add("open");
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Lock body
+    document.body.classList.add('body-lock');
+    document.body.style.top = `-${scrollPosition}px`;
+
+    // Disable touch actions
+    document.body.style.touchAction = 'none';
 });
 
 document.getElementById("closeButton").addEventListener("click", function () {
     document.getElementById("sideMenu").classList.remove("open");
+    document.body.classList.remove('body-lock');
+    document.body.style.touchAction = '';
+
+    // Restore scroll position
+    window.scrollTo(0, scrollPosition);
+    document.body.style.top = '';
 });
 
 playerFooter.addEventListener('touchstart', handleTouchStartfooter, false);
@@ -1043,6 +1067,14 @@ musicPlayerFooter.addEventListener('click', (e) => {
     if (!e.target.closest('#play-pause') && !e.target.closest('#pt-progress-container') && !e.target.closest('#next')) {
         mainMusicPlayer.classList.add('active');
         document.body.style.overflow = 'hidden';
+        scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Lock body
+        document.body.classList.add('body-lock');
+        document.body.style.top = `-${scrollPosition}px`;
+
+        // Disable touch actions
+        document.body.style.touchAction = 'none';
     }
 });
 
@@ -1054,6 +1086,12 @@ nextButton.addEventListener('click', e => e.stopPropagation());
 closePlayer.addEventListener('click', () => {
     mainMusicPlayer.classList.remove('active');
     document.body.style.overflow = 'auto';
+    document.body.classList.remove('body-lock');
+    document.body.style.touchAction = '';
+
+    // Restore scroll position
+    window.scrollTo(0, scrollPosition);
+    document.body.style.top = '';
 });
 
 
