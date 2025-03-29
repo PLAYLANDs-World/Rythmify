@@ -488,6 +488,7 @@ footer {
     padding: 10px;
     text-align: left;
     cursor: pointer;
+    border-radius: 0.5rem;
     color: white;
 }
 
@@ -1272,6 +1273,10 @@ footer {
     .link-item a {
         cursor: none;
     }
+
+    .popup .options button {
+        cursor: none;
+    }
 }
 
 /*-----------------------------------------for-desktop-screen-configuration----------------------------------------*/
@@ -1335,6 +1340,7 @@ footer {
     .main-player-song-info {
         padding-left: 0;
     }
+
 }
 
 /*-------------------------------------------------Animations-----------------------------------------------------------*/
@@ -1358,4 +1364,4 @@ footer {
     to {
         transform: translateX(-100%);
     }
-}
+    }
