@@ -15,7 +15,7 @@ function renderPlaylist(audiobooks) {
 
     // Create a reversed copy of the audiobooks array without mutating the original
     const reversedAudiobooks = [...audiobooks].reverse();
-    const itemsPerPage = 10;
+    const itemsPerPage = 6;
     let currentIndex = 0;
     const loadMoreButton = document.getElementById('loadMoreButton');
 
@@ -53,6 +53,14 @@ function renderPlaylist(audiobooks) {
 function showEpisodes(book) {
     const modal = document.getElementById('episodeModal');
     const list = document.getElementById('episodeList');
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Lock body
+    document.body.classList.add('body-lock');
+    document.body.style.top = `-${scrollPosition}px`;
+
+    // Disable touch actions
+    document.body.style.touchAction = 'none';
     list.innerHTML = '';
 
 
@@ -78,6 +86,7 @@ function showEpisodes(book) {
     const episodeContainer = document.createElement('div');
     episodeContainer.className = 'episode-container';
 
+
     book.episodes.forEach((episode, index) => {
         const episodeItem = document.createElement('div');
         episodeItem.className = 'episode-item';
@@ -99,8 +108,19 @@ function showEpisodes(book) {
     modal.classList.add('active');
 
     const epcloseBtn = header.querySelector('.ep-close-btn');
-    epcloseBtn.addEventListener('click', () => modal.style.display = 'none');
+    epcloseBtn.addEventListener('click', () => {
+        modal.style.display = 'none'
+        document.body.classList.remove('body-lock');
+        document.body.style.touchAction = '';
+
+        // Restore scroll position
+        window.scrollTo(0, scrollPosition);
+        document.body.style.top = '';
+    });
+
+
 }
+
 
 function loadAudiobook(book, episodeIdentifier) {
     // Stop existing audio
