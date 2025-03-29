@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/PLAYLANDs-World/mp3-files-01@main/fevicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Unknownyy00/01-img-share@main/mainficon.png">
     <title>Rythmify</title>
     <link rel="stylesheet" href="style/mainstyle.css">
     <link rel="stylesheet" href="style/audiobookstyle.css">
     <link rel="stylesheet" href="style/searchstyle.css">
+    <link rel="stylesheet" href="style/moviestyle.css">
+    <link rel="stylesheet" href="style/alertstyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +25,8 @@
     <header>
         <div id="main-header" class="main-header">
             <div id="main-logo-img-cont">
-                <a class="main-logo-url-cont" href="#"><img id="logo-img"
-                        src="https://cdn.jsdelivr.net/gh/PLAYLANDs-World/mp3-files-01@main/fevicon.png" alt=""></a>
+                <a class="main-logo-url-cont" href=""><img id="logo-img"
+                        src="https://cdn.jsdelivr.net/gh/Unknownyy00/01-img-share@main/fevicon.png" alt=""></a>
             </div>
             <div class="search-button" id="search-button">
                 <div class="search-button-op" id="search-button-op">
@@ -58,10 +60,10 @@
                     <div class="accordion">
                         <div class="accordion-header">Menu</div>
                         <div class="accordion-content">
-                            <div class="link-item"><a href="#">Home</a></div>
-                            <div class="link-item"><a href="#">About</a></div>
-                            <div class="link-item"><a href="#">Services</a></div>
-                            <div class="link-item"><a href="#">Contact</a></div>
+                            <div class="link-item"><a href="">Home</a></div>
+                            <div class="link-item"><a id="comingSoonAbout" href="">About</a></div>
+                            <div class="link-item"><a id="comingSoonSer" href="">Services</a></div>
+                            <div class="link-item"><a id="comingSoonCont" href="">Contact</a></div>
                         </div>
                     </div>
                 </div>
@@ -103,6 +105,16 @@
                             </path>
                         </svg>
                         Podcasts</button>
+
+                    <button class="tab-button" onclick="openTab(event, 'tab3')">
+                        <svg class="movies-tab-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" id="movies">
+                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                            <path fill="white"
+                                d="M18 4v1h-2V4c0-.55-.45-1-1-1H9c-.55 0-1 .45-1 1v1H6V4c0-.55-.45-1-1-1s-1 .45-1 1v16c0 .55.45 1 1 1s1-.45 1-1v-1h2v1c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-1h2v1c0 .55.45 1 1 1s1-.45 1-1V4c0-.55-.45-1-1-1s-1 .45-1 1zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z">
+                            </path>
+                        </svg>
+                        Movies</button>
                 </div>
 
                 <div id="tab1" class="tab-content active">
@@ -128,6 +140,30 @@
                     <button id="loadMoreButton" class="load-more-btn">
                         <svg class="main-spin-icon" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="load"
                             width="512" height="512" x="0" y="0" version="1.1" viewBox="0 0 512 512" fill="white">
+                            <path
+                                d="M432 240h-80c-8.8 0-16 7.2-16 16s7.2 16 16 16h80c8.8 0 16-7.2 16-16s-7.2-16-16-16zM176 256c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16s7.2 16 16 16h80c8.8 0 16-7.2 16-16zM256 336c-8.8 0-16 7.2-16 16v80c0 8.8 7.2 16 16 16s16-7.2 16-16v-80c0-8.8-7.2-16-16-16zM256 64c-8.8 0-16 7.2-16 16v80c0 8.8 7.2 16 16 16s16-7.2 16-16V80c0-8.8-7.2-16-16-16zM325.3 216c4.4 7.7 14.2 10.3 21.9 5.9l69.3-40c7.7-4.4 10.3-14.2 5.9-21.9s-14.2-10.3-21.9-5.9l-69.3 40c-7.7 4.5-10.3 14.2-5.9 21.9zM186.7 296c-4.4-7.7-14.2-10.3-21.9-5.9l-69.3 40c-7.7 4.4-10.3 14.2-5.9 21.9s14.2 10.3 21.9 5.9l69.3-40c7.7-4.5 10.3-14.2 5.9-21.9zM317.9 331.1c-4.4-7.7-14.2-10.3-21.9-5.9s-10.3 14.2-5.9 21.9l40 69.3c4.4 7.7 14.2 10.3 21.9 5.9 7.7-4.4 10.3-14.2 5.9-21.9l-40-69.3zM181.9 95.6c-4.4-7.7-14.2-10.3-21.9-5.9-7.7 4.4-10.3 14.2-5.9 21.9l40 69.3c4.4 7.7 14.2 10.3 21.9 5.9s10.3-14.2 5.9-21.9l-40-69.3zM296 186.7c7.7 4.4 17.4 1.8 21.9-5.9l40-69.3c4.4-7.7 1.8-17.4-5.9-21.9-7.7-4.4-17.4-1.8-21.9 5.9l-40 69.3c-4.4 7.7-1.8 17.5 5.9 21.9zM216 325.3c-7.7-4.4-17.4-1.8-21.9 5.9l-40 69.3c-4.4 7.7-1.8 17.4 5.9 21.9 7.7 4.4 17.4 1.8 21.9-5.9l40-69.3c4.4-7.7 1.8-17.5-5.9-21.9zM416.4 330.1l-69.3-40c-7.7-4.4-17.4-1.8-21.9 5.9-4.4 7.7-1.8 17.4 5.9 21.9l69.3 40c7.7 4.4 17.4 1.8 21.9-5.9 4.4-7.7 1.8-17.4-5.9-21.9zM95.6 181.9l69.3 40c7.7 4.4 17.4 1.8 21.9-5.9s1.8-17.4-5.9-21.9l-69.3-40c-7.7-4.4-17.4-1.8-21.9 5.9-4.4 7.7-1.8 17.4 5.9 21.9z">
+                            </path>
+                        </svg>
+                        Load More</button>
+                    <div></div><br>
+                    <div></div><br>
+                </div>
+
+                <div id="tab3" class="tab-content">
+                    <div class="pt-movies-search-container">
+                        <div class="movies-search-container">
+                            <input type="text" id="moviesSearch" placeholder="Search movies..."
+                                class="movies-search-bar">
+                            <svg class="search-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="movies-gallery" id="moviesContainer"></div>
+                    <button id="loadMoreMoviesButton" class="load-more-btn-movies"><svg class="main-spin-icon"
+                            xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="load" width="512" height="512"
+                            x="0" y="0" version="1.1" viewBox="0 0 512 512" fill="white">
                             <path
                                 d="M432 240h-80c-8.8 0-16 7.2-16 16s7.2 16 16 16h80c8.8 0 16-7.2 16-16s-7.2-16-16-16zM176 256c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16s7.2 16 16 16h80c8.8 0 16-7.2 16-16zM256 336c-8.8 0-16 7.2-16 16v80c0 8.8 7.2 16 16 16s16-7.2 16-16v-80c0-8.8-7.2-16-16-16zM256 64c-8.8 0-16 7.2-16 16v80c0 8.8 7.2 16 16 16s16-7.2 16-16V80c0-8.8-7.2-16-16-16zM325.3 216c4.4 7.7 14.2 10.3 21.9 5.9l69.3-40c7.7-4.4 10.3-14.2 5.9-21.9s-14.2-10.3-21.9-5.9l-69.3 40c-7.7 4.5-10.3 14.2-5.9 21.9zM186.7 296c-4.4-7.7-14.2-10.3-21.9-5.9l-69.3 40c-7.7 4.4-10.3 14.2-5.9 21.9s14.2 10.3 21.9 5.9l69.3-40c7.7-4.5 10.3-14.2 5.9-21.9zM317.9 331.1c-4.4-7.7-14.2-10.3-21.9-5.9s-10.3 14.2-5.9 21.9l40 69.3c4.4 7.7 14.2 10.3 21.9 5.9 7.7-4.4 10.3-14.2 5.9-21.9l-40-69.3zM181.9 95.6c-4.4-7.7-14.2-10.3-21.9-5.9-7.7 4.4-10.3 14.2-5.9 21.9l40 69.3c4.4 7.7 14.2 10.3 21.9 5.9s10.3-14.2 5.9-21.9l-40-69.3zM296 186.7c7.7 4.4 17.4 1.8 21.9-5.9l40-69.3c4.4-7.7 1.8-17.4-5.9-21.9-7.7-4.4-17.4-1.8-21.9 5.9l-40 69.3c-4.4 7.7-1.8 17.5 5.9 21.9zM216 325.3c-7.7-4.4-17.4-1.8-21.9 5.9l-40 69.3c-4.4 7.7-1.8 17.4 5.9 21.9 7.7 4.4 17.4 1.8 21.9-5.9l40-69.3c4.4-7.7 1.8-17.5-5.9-21.9zM416.4 330.1l-69.3-40c-7.7-4.4-17.4-1.8-21.9 5.9-4.4 7.7-1.8 17.4 5.9 21.9l69.3 40c7.7 4.4 17.4 1.8 21.9-5.9 4.4-7.7 1.8-17.4-5.9-21.9zM95.6 181.9l69.3 40c7.7 4.4 17.4 1.8 21.9-5.9s1.8-17.4-5.9-21.9l-69.3-40c-7.7-4.4-17.4-1.8-21.9 5.9-4.4 7.7-1.8 17.4 5.9 21.9z">
                             </path>
@@ -324,6 +360,101 @@
         </section>
     </div>
 
+    <div class="movie-popup" id="moviePopup">
+        <div class="popup-content">
+            <div class="movies-close-btn-cont">
+                <button class="movies-close-btn" onclick="hideMovieDetails()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z" />
+                        <path fill-rule="evenodd"
+                            d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+                    </svg> Back
+                </button>
+            </div>
+            <div class="pt-movie-media-player-og-ser">
+                <div class="movie-tabs">
+                    <button class="movie-tab-button active" onclick="switchMovieTab(event, 'mainTab')">
+                        <svg class="movie-sver-glob-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                        </svg>Main</button>
+                    <button class="movie-tab-button" onclick="switchMovieTab(event, 'ownTab')">
+                        <svg class="movie-sver-glob-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-globe2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                        </svg>Own</button>
+
+                    <button class="movie-tab-button" onclick="switchMovieTab(event, 'TrailerTab')">
+                        <svg class="movie-sver-glob-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                        </svg>Trailer
+                    </button>
+                </div>
+                <div id="mainTab" class="movie-tab-content active">
+                    <div class="mov-poster-image-container" onclick="hideImage()">
+                        <div class="pt-main-mov-play-btn">
+                            <div class="main-mov-play-btn" id="mainMovPlayBtn">
+                                <div class="main-mov-play-btn-ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                                    </svg>
+                                </div>
+                                <div class="pt-main-mov-play-title">
+                                    <span class="main-mov-play-title" id="MainMovPlayTitle">Hello</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img id="MoviePosterMainInner" src="" alt="">
+                    </div>
+                    <iframe class="movie-media-player-og-ser" id="OGmovieMedia" src="" frameborder="0"
+                        referrerpolicy="origin" allowfullscreen></iframe>
+                </div>
+                <div id="ownTab" class="movie-tab-content">
+                    <div class="mov-poster-image-container-2" onclick="hideImage2()">
+                        <div class="pt-main-mov-play-btn">
+                            <div class="main-mov-play-btn" id="mainMovPlayBtn">
+                                <div class="main-mov-play-btn-ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                                    </svg>
+                                </div>
+                                <div class="pt-main-mov-play-title">
+                                    <span class="main-mov-play-title" id="MainMovPlayTitle2">Hello</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img id="MoviePosterMainInner2" src="" alt="">
+                    </div>
+                    <iframe class="movie-media-player-og-ser-2" id="OGmovieMedia2" src="" frameborder="0"
+                        referrerpolicy="origin" allowfullscreen></iframe>
+                </div>
+                <div id="TrailerTab" class="movie-tab-content">
+                    <iframe class="mov-trailer-main" id="MOVTrailerMainWin"
+                        src="https://www.youtube.com/embed/arxGBPMmsFU" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="pt-movies-name-img-main">
+                <img class="movies-name-img-main" id="moviesLogoMain" src="" alt="">
+            </div>
+            <div class="movie-Genretag-container" id="MovieGenretagContainer"></div>
+            <div class="pt-movie-dis-cont-main">
+                <div class="movie-dis-cont-main" id="movieDisMain"></div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="search-window" class="search-window">
         <div class="search-window-head">
@@ -397,13 +528,52 @@
             </div>
         </div>
     </div>
+
+
+
+    <!----------------------------------------------------------------------------temp-html------------------------------------------------------>
+
+    <!-- Background Overlay -->
+    <div id="alert-overlay" onclick="closeDownloadAlert()"></div>
+
+    <!-- Custom Alert -->
+    <div id="download-not-working">
+        <div id="pt-alert-message-head">
+            <div class="alert-message-head" id="alert-message-head">
+                <div class="alert-message-head-icon-1">
+                    <img width="64" height="64" src="https://img.icons8.com/arcade/64/high-priority.png"
+                        alt="high-priority" />
+                </div> Unable to Download Item
+            </div>
+        </div>
+        <div id="alert-message" class="alert-message">Stay tuned! We’ll notify you as soon as it’s ready.</div>
+        <div class="pt-team-name"><span class="team-name" id="team-name">— Team Rythmify</span></div>
+        <br><br>
+        <div class="pt-alert-close-btn">
+            <button id="alert-close-btn" class="alert-close-btn" onclick="closeDownloadAlert()">Understood
+                <div class="alert-close-btn-icon" id="alert-close-btn-icon">
+                    <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/FFFFFF/facebook-like.png"
+                        alt="facebook-like" />
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------------temp-html------------------------------------------------------>
+
+
+
+
     <audio id="audio-player">
         <source id="audio-source" src="" type="audio/mpeg">
     </audio>
     <script src="script/mainscript.js"></script>
     <script src="script/audiobookscript.js"></script>
     <script src="script/searchscript.js"></script>
+    <script src="script/moviescript.js"></script>
+    <script src="script/alertscript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
