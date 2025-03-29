@@ -1,0 +1,195 @@
+/* Custom Alert Box Styling */
+#download-not-working {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 85%;
+    max-width: 700px;
+    height: auto;
+    background: rgba(190, 190, 190, 0.5);
+    color: #fff;
+    padding: 5px;
+    border-radius: 1.3rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 10001;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.alert-message-head {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 1.1rem 1.1rem 0.3rem 0.3rem;
+    padding: 25px 0 10px 0;
+    height: auto;
+    background-color: rgb(160, 55, 55);
+    color: #ffffff;
+}
+
+.alert-message-head img {
+    color: white;
+    animation: bounce 1s infinite alternate;
+}
+
+.alter-msg-body-song-name {
+    font-family: monospace;
+    letter-spacing: 3px;
+    color: red;
+}
+
+.alert-message {
+    text-align: left;
+    color: black;
+    padding: 5px 20px;
+    max-height: 300px;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    position: relative;
+}
+
+.alert-message::-webkit-scrollbar {
+    margin-right: 20px;
+    width: 5px;
+}
+
+.alert-message::-webkit-scrollbar-thumb {
+    background: linear-gradient(-45deg, #fff646, #ffd675);
+    border-radius: 10px;
+}
+
+.alert-message::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    border-radius: 10px;
+}
+
+.Site-under-const-head-head {
+    margin-top: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Site-under-const-head-head img {
+    height: 40px;
+    width: 40px;
+}
+
+.Site-under-const-head-head-hey {
+    justify-content: center;
+    align-items: first baseline;
+    line-height: 1.15rem;
+}
+
+.site-under-const-para-01 {
+    line-height: 1.2rem;
+}
+
+.site-under-const-goto img{
+    width: 25px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.Site-under-const-head-head-hey img{
+    width: 17px;
+    align-self: baseline;
+    height: 17px;
+}
+
+.Site-under-const-point-01 {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1rem;
+}
+
+.Site-under-const-point-01 img {
+    width: 17px;
+    height: 17px;
+}
+
+#download-not-working p {
+    font-size: 16px;
+    color: #b6b6b6;
+}
+
+#download-not-working .team-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #612828;
+}
+
+.pt-team-name {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.pt-alert-close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    padding: 20px;
+}
+
+.alert-close-btn {
+    background: #611212;
+    border: none;
+    width: 70%;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-close-btn-icon img {
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+#download-not-working .close-btn:hover {
+    background: #1f71a1;
+    transform: scale(1.1);
+}
+
+/* Background overlay (for outside click effect) */
+#alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Animations */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-3px);
+    }
+}
