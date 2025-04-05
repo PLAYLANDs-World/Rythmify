@@ -306,11 +306,15 @@
 }
 
 .main-mov-play-btn svg {
+    margin: 0.7rem;
     width: 3rem;
     align-self: center;
-    mix-blend-mode: difference;
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: rgba(123, 57, 57, 0.378);
+    backdrop-filter: blur(7px);
     height: 3rem;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 227, 227);
 }
 
 .pt-main-mov-play-title {
@@ -320,12 +324,17 @@
     margin: 7px;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(7px);
+    margin: 0 30px;
     padding: 10px;
     border-radius: 0.7rem;
 }
 
 .main-mov-play-title {
     color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mov-trailer-main {
