@@ -1,7 +1,7 @@
 function handleHashChange() {
     const hash = window.location.hash.slice(1); // Remove #
-    if (hash.startsWith('/movies/')) {
-        const movieSlug = hash.split('/movies/')[1];
+    if (hash.startsWith('/Rythmify/movies/')) {
+        const movieSlug = hash.split('/Rythmify/movies/')[1];
         const movie = movies.find(m =>
             m.title.toLowerCase().replace(/ /g, '-') === movieSlug
         );
