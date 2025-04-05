@@ -212,6 +212,7 @@ const playIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
 </svg>`;
 
 function openTab(evt, tabName) {
+    
     if (isAnimating || evt.currentTarget.classList.contains('active')) return;
 
     isAnimating = true;
