@@ -52,6 +52,23 @@ function initGallery() {
             <img src="${movie.poster}" class="movie-poster" alt="${movie.title}">
             <h3 class="movie-title">${movie.title}</h3>
         `;
+
+        // Updated click handler for hash-based routing
+        card.addEventListener('click', () => {
+            // Create URL-friendly slug
+            const movieSlug = movie.title.toLowerCase()
+                .replace(/:/g, '')
+                .replace(/ /g, '-')
+                .replace(/[^\w-]+/g, '');
+
+
+            // Update URL without reload
+            window.location.hash = `/movies/${movieSlug}`;
+
+            // Update document title immediately
+            document.title = `${movie.title} | Rythmify`;
+        });
+
         const originalIndex = movies.indexOf(movie);
         card.dataset.index = originalIndex;
         card.addEventListener('click', () => displayMovieDetails(originalIndex));
@@ -78,6 +95,17 @@ function initGallery() {
 let scrollPosition = 0;
 
 function displayMovieDetails(index) {
+
+    const movie = movies[index];
+
+    // Update URL
+    const movieSlug = movie.title.toLowerCase().replace(/ /g, '-');
+    window.location.hash = `/movies/${movieSlug}`;
+
+    // Update document title
+    document.title = `${movie.title} | Rythmify`;
+
+
     const Movpopup = document.getElementById('moviePopup');
     const MovmainsrcURL = document.getElementById('OGmovieMedia');
     const MovOwnSrcURL = document.getElementById('OGmovieMedia2');
@@ -133,23 +161,34 @@ function displayMovieDetails(index) {
 function hideMovieDetails() {
     const Movpopup = document.getElementById('moviePopup');
 
-    // Unlock body
+    // Get current active tab
+    const activeTab = document.querySelector('.tab-content.active');
+    const activeTabId = activeTab ? activeTab.id : 'tab3'; // Default to movies tab
+
+    // Reset to current tab's URL and title
+    const tabConfig = {
+        'tab1': { path: '', title: 'Rythmify' },
+        'tab2': { path: '', title: 'Rythmify' },
+        'tab3': { path: '', title: 'Rythmify' }
+    };
+
+    // Update URL and title without triggering hashchange
+    if (tabConfig[activeTabId]) {
+        window.history.replaceState({}, '', `/${tabConfig[activeTabId].path}`);
+        document.title = tabConfig[activeTabId].title;
+    }
+
+    // Rest of your original code
     document.body.classList.remove('body-lock');
     document.body.style.touchAction = '';
-
-    // Restore scroll position
     window.scrollTo(0, scrollPosition);
     document.body.style.top = '';
-
-    // Hide popup
     Movpopup.style.display = 'none';
     document.querySelector('.mov-poster-image-container').style.display = 'flex';
     document.querySelector('.mov-poster-image-container-2').style.display = 'flex';
     document.querySelector('.movie-media-player-og-ser').style.display = 'none';
     document.querySelector('.movie-media-player-og-ser-2').style.display = 'none';
-
 }
-
 // Close popup when clicking outside content
 
 // Handle window resize
