@@ -167,9 +167,9 @@ function hideMovieDetails() {
 
     // Reset to current tab's URL and title
     const tabConfig = {
-        'tab1': { path: '', title: 'Rythmify' },
-        'tab2': { path: '', title: 'Rythmify' },
-        'tab3': { path: '', title: 'Rythmify' }
+        'tab1': { path: '/Rythmify', title: 'Rythmify' },
+        'tab2': { path: '/Rythmify', title: 'Rythmify' },
+        'tab3': { path: 'Rythmify', title: 'Rythmify' }
     };
 
     // Update URL and title without triggering hashchange
