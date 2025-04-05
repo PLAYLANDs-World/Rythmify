@@ -74,7 +74,7 @@
         <section id="contact" class="section">
             <div class="tab-container">
                 <div class="tab-buttons">
-                    <button class="tab-button active" onclick="openTab(event, 'tab1')" id="music-tab-button">
+                    <button class="tab-button active" onclick="openTab(event, 'tab1')" id="music-tab-button" data-tab="tab1">
                         <svg class="music-tab-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="music"
                             fill="white">
                             <g>
@@ -88,7 +88,7 @@
                         </svg>
 
                         Music</button>
-                    <button class="tab-button" onclick="openTab(event, 'tab2')">
+                    <button class="tab-button" onclick="openTab(event, 'tab2')" data-tab="tab2">
                         <svg class="podcasts-tab-icon" xmlns="http://www.w3.org/2000/svg"
                             enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="podcasts" fill="white">
                             <path
@@ -106,7 +106,7 @@
                         </svg>
                         Podcasts</button>
 
-                    <button class="tab-button" onclick="openTab(event, 'tab3')">
+                    <button class="tab-button" id="main-movies-tab-button" onclick="openTab(event, 'tab3')" data-tab="tab3">
                         <svg class="movies-tab-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" id="movies">
                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -572,6 +572,7 @@
     <script src="script/searchscript.js"></script>
     <script src="script/moviescript.js"></script>
     <script src="script/alertscript.js"></script>
+    <script src="script/routing.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
