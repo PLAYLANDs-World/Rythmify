@@ -63,7 +63,7 @@ function initGallery() {
 
 
             // Update URL without reload
-            window.location.hash = `/Rythmify/movies/${movieSlug}`;
+            window.location.hash = `/movies/${movieSlug}`;
 
             // Update document title immediately
             document.title = `${movie.title} | Rythmify`;
@@ -100,7 +100,7 @@ function displayMovieDetails(index) {
 
     // Update URL
     const movieSlug = movie.title.toLowerCase().replace(/ /g, '-');
-    window.location.hash = `/Rythmify/movies/${movieSlug}`;
+    window.location.hash = `/movies/${movieSlug}`;
 
     // Update document title
     document.title = `${movie.title} | Rythmify`;
